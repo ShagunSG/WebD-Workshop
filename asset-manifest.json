@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WebD-Workshop/static/css/main.abd64e84.css",
+    "main.js": "/WebD-Workshop/static/js/main.fc5e3f3f.js",
+    "static/js/787.540fbea6.chunk.js": "/WebD-Workshop/static/js/787.540fbea6.chunk.js",
+    "index.html": "/WebD-Workshop/index.html",
+    "main.abd64e84.css.map": "/WebD-Workshop/static/css/main.abd64e84.css.map",
+    "main.fc5e3f3f.js.map": "/WebD-Workshop/static/js/main.fc5e3f3f.js.map",
+    "787.540fbea6.chunk.js.map": "/WebD-Workshop/static/js/787.540fbea6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.fc5e3f3f.js"
+  ]
+}

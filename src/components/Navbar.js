@@ -4,6 +4,7 @@ import '../App.css'
 
 export default function Navbar(props) {
   return (
+
     <>
       <div className='w-full h-24 flex flex-row shadow-lg border-b-1 border-black justify-left items-center bg-gradient-to-r from-rose-100 to-teal-100'> 
         <div className='mx-8'><h1 className='uppercase text-xl font-bold'>techfest-workshop</h1></div>

@@ -38,9 +38,9 @@ export default function TextForm(props) {
   return (
     <>
     <div className="container">
-        <h1>{props.heading}</h1>
+        <h1><strong>Enter the text to analyze.</strong></h1>
         <div className="mb-3">
-        <textarea className="form-control" value={text} onChange={handleOnChange} id="textBox" rows="8"></textarea>
+        <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='black'?'black':'light'}} id="textBox" rows="8"></textarea>
         </div>
         <button className="btn btn-success mx-2" onClick={UpperCase}>Upper Case</button>
         <button className="btn btn-success mx-2" onClick={LowerCase}>Lower Case</button>

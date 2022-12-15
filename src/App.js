@@ -20,14 +20,14 @@ function App() {
   }
   
   return (
-    <>
+    <div className='bg-gradient-to-r from-rose-100 to-teal-100'>
       <Navbar mode={mode} toggleMode={toggleMode} />
       <div className="container my-3">
        <TextForm/>
       </div>
       <div className="container my-3"><About/></div>
 
-    </>
+    </div>
   );
 }
 

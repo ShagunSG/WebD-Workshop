@@ -10,10 +10,12 @@ function App() {
 
   const toggleMode = () =>{
     if (mode === 'white'){
-      setMode('black')
+      setMode('black');
+      document.body.style.backgroundColor='rgb(30 41 59)'
     }
     else {
-      setMode('white')
+      setMode('white');
+      document.body.style.backgroundColor='rgb(226 232 240)'
     }
   }
   
@@ -21,7 +23,7 @@ function App() {
     <>
       <Navbar mode={mode} toggleMode={toggleMode} />
       <div className="container my-3">
-       <TextForm heading="Enter the text to analyze."/>
+       <TextForm/>
       </div>
       <div className="container my-3"><About/></div>
 
@@ -30,3 +32,4 @@ function App() {
 }
 
 export default App;
+

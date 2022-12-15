@@ -27,6 +27,11 @@ export default function TextForm(props) {
     setText(event.target.value)
   }
 
+  const handleExtraSpace = () =>{
+    let newText = text.split(/[ ]+/);
+    setText(newText.join(" "))
+  }
+
   const [text, setText] = useState('');
   // text=Hello!;-- Wrong way to change the vale of the state.
   // setText("Hello!"); -- Correct way to change the state.
@@ -41,6 +46,7 @@ export default function TextForm(props) {
         <button className="btn btn-success mx-2" onClick={LowerCase}>Lower Case</button>
         <button className="btn btn-success mx-2" onClick={clearText}>Clear Text</button>
         <button className="btn btn-success mx-2" onClick={copyText}>Copy Text</button>
+        <button className="btn btn-success mx-2" onClick={handleExtraSpace}>Remove Extra Space</button>
     </div>
     <div className="container my-2">
       <h1>Your text summary.</h1>

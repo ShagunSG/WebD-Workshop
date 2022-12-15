@@ -19,10 +19,6 @@ export default function Navbar(props) {
           <a className="nav-link" href="/">{props.aboutText}</a>
         </li>
       </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control form-control-lg me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-light" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>

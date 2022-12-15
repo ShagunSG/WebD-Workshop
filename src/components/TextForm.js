@@ -6,14 +6,27 @@ export default function TextForm(props) {
     let newText= text.toUpperCase();
     setText(newText)
   }
+
   const LowerCase = () =>{
     // console.log("Uppercase was clicked")
     let newText= text.toLowerCase();
     setText(newText)
   }
+
+  const clearText = () =>{
+    setText("")
+  }
+
+  const copyText = () =>{
+    var text = document.getElementById("textBox");
+    text.select();
+    navigator.clipboard.writeText(text.value);
+  }
+
   const handleOnChange = (event) =>{
     setText(event.target.value)
   }
+
   const [text, setText] = useState('');
   // text=Hello!;-- Wrong way to change the vale of the state.
   // setText("Hello!"); -- Correct way to change the state.
@@ -24,14 +37,17 @@ export default function TextForm(props) {
         <div className="mb-3">
         <textarea className="form-control" value={text} onChange={handleOnChange} id="textBox" rows="8"></textarea>
         </div>
-        <button className="btn btn-success mx-2" onClick={UpperCase}>Convert to UpperCase.</button>
-        <button className="btn btn-success mx-2" onClick={LowerCase}>Convert to LowerCase.</button>
+        <button className="btn btn-success mx-2" onClick={UpperCase}>Upper Case</button>
+        <button className="btn btn-success mx-2" onClick={LowerCase}>Lower Case</button>
+        <button className="btn btn-success mx-2" onClick={clearText}>Clear Text</button>
+        <button className="btn btn-success mx-2" onClick={copyText}>Copy Text</button>
     </div>
     <div className="container my-2">
       <h1>Your text summary.</h1>
-      <p>{text.split(" ").length} words and {text.length} characters.</p>
-      <p>{0.008*text.split(" ").length} Minutes to read</p>
-      <h2>Preview</h2>
+      <p>{text.split(" ").length-1} words and {text.length} characters.</p>
+      <p>{0.33*text.split(" ").length-0.33} Seconds to read 
+      (given that average reading time is about 180 wpm or 3 wps.)</p>
+      <p><h2 className='my-2'><b>Preview</b></h2></p>
       <p>{text}</p>
     </div>
     </>

@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import TextForm from './components/TextForm';
 import About from './components/About'
+import Doggy from './components/Doggy'
 import React, { useState } from 'react';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
        <TextForm/>
       </div>
       <div className="container my-3"><About/></div>
-
+      <Doggy></Doggy>
     </div>
   );
 }

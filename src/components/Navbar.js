@@ -13,6 +13,7 @@ export default function Navbar(props) {
   return (
 
     <>
+
       <div className='w-full h-24 flex flex-row shadow-lg border-b-1 border-black justify-left items-center bg-gradient-to-r from-rose-100 to-teal-100'> 
         <motion.div className='mx-8' animate={{y: move1? -10: 0}} onHoverStart={()=> {setMove1(!move1)}} onHoverEnd={()=> {setMove1(!move1)}}><h1 className='uppercase text-xl font-bold'><a href='/'>techfest-workshop</a></h1></motion.div>
         <motion.div className='mx-8' animate={{y: move2? -10: 0}} onHoverStart={()=> {setMove2(!move2)}} onHoverEnd={()=> {setMove2(!move2)}}><h1 className='uppercase text-lg'>home </h1></motion.div>

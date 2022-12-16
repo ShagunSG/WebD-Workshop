@@ -1,7 +1,5 @@
 import Navbar from './Navbar'
 import TextForm from './TextForm';
-import About from './About'
-import Doggy from './Doggy'
 import React from 'react';
 import useLocalStorage from 'use-local-storage';
 import {motion} from 'framer-motion';
@@ -31,10 +29,7 @@ export default function LandingPage() {
         <motion.div initial={{scale: 0}} animate={{scale: 1}} data-theme={theme}>
           <div className="container my-3">
            <TextForm/>
-          </div>
-          <div className="container my-3"><About/></div>
-          <Doggy></Doggy>
-    
+          </div>    
         </motion.div>
     );
 }

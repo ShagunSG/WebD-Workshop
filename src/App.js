@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import TextForm from './components/TextForm';
 import About from './components/About'
+import Doggy from './components/Doggy'
 import React, { useState } from 'react';
 import useLocalStorage from 'use-local-storage';
 
@@ -34,6 +35,8 @@ function App() {
       <div className="container my-3">
        <TextForm/>
       </div>
+      <div className="container my-3"><About/></div>
+      <Doggy></Doggy>
       <div className="container my-4"><About/></div>
 
     </div>

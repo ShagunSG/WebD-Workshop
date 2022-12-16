@@ -58,7 +58,7 @@ export default function TextForm(props) {
       <h1>Your text summary.</h1>
       <p>{text.split(" ").length-1} words and {text.length} characters.</p>
       <p>{0.33*text.split(" ").length-0.33} Seconds to read 
-      (given that average reading time is about 180 wpm or 3 wps.)</p>
+      (given that average reading time is about 180 wpm or 3 wps)</p>
       <p><h2 className='my-2 text-lg'><b>Preview</b></h2></p>
       <p>{text}</p>
     </div>

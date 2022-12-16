@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import LandingPage from './components/LandingPage'
 import About from './components/About'
+
 // import useLocalStorage from 'use-local-storage';
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -51,6 +52,7 @@ class App extends Component {
       </Router>
     );
   }
+
 }
 export default App;
 

@@ -37,7 +37,7 @@ export default function TextForm(props) {
   // setText("Hello!"); -- Correct way to change the state.
   return (
     <>
-    <div className="container">
+    <div className="container text-xl">
         <h1><strong>Enter the text to analyze.</strong></h1>
         <div className="mb-3">
         <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='black'?'black':'light'}} id="textBox" rows="8"></textarea>
@@ -53,7 +53,7 @@ export default function TextForm(props) {
       <p>{text.split(" ").length-1} words and {text.length} characters.</p>
       <p>{0.33*text.split(" ").length-0.33} Seconds to read 
       (given that average reading time is about 180 wpm or 3 wps.)</p>
-      <p><h2 className='my-2'><b>Preview</b></h2></p>
+      <p><h2 className='my-2 text-lg'><b>Preview</b></h2></p>
       <p>{text}</p>
     </div>
     </>

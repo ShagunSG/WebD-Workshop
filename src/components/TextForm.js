@@ -47,7 +47,7 @@ export default function TextForm(props) {
         <motion.button className="btn btn-success mx-2" onClick={LowerCase} whileHover={{ scale: 1.2 }}>Lower Case</motion.button>
         <motion.button className="btn btn-success mx-2" onClick={clearText} whileHover={{ scale: 1.2 }}>Clear Text</motion.button>
         <motion.button className="btn btn-success mx-2" onClick={copyText} whileHover={{ scale: 1.2 }}>Copy Text</motion.button>
-        <motion.button className="btn btn-success mx-2" onClick={handleExtraSpace} whileHover={{ scale: 1.2 }}>Remove Extra Space</motion.button>
+        <motion.button className="btn btn-success mx-2" onClick={handleExtraSpace} whileHover={{ scale: 1.15 }}>Remove Extra Space</motion.button>
     </div>
     <div className="container my-2">
       <h1>Your text summary.</h1>

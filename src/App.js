@@ -3,8 +3,9 @@ import Navbar from './components/Navbar'
 import TextForm from './components/TextForm';
 import About from './components/About'
 import Doggy from './components/Doggy'
-import React, { useState } from 'react';
+import React from 'react';
 import useLocalStorage from 'use-local-storage';
+import {motion} from 'framer-motion';
 
 function App() {
   
@@ -30,16 +31,15 @@ function App() {
   }
   
   return (
-    <div className="app bg-gradient-to-r from-rose-100 to-teal-100" data-theme={theme}>
+    <motion.div initial={{scale: 0}} animate={{scale: 1}} className="app bg-gradient-to-r from-rose-100 to-teal-100" data-theme={theme}>
       <Navbar toggleMode={toggleMode} />
       <div className="container my-3">
        <TextForm/>
       </div>
       <div className="container my-3"><About/></div>
       <Doggy></Doggy>
-      <div className="container my-4"><About/></div>
 
-    </div>
+    </motion.div>
   );
 }
 

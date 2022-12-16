@@ -42,7 +42,7 @@ class Doggy extends React.Component {
                 <img src={this.state.imgLink[0]} alt='doggy' className="h-64 w-64 rounded-lg shadow-xl object-cover" />
                 <h1><span className="text-gray-500">(Error:404)</span></h1>
                 <h2 className="text-xl">Whoops! Looks like u tried to go somewhere you weren't supposed to.</h2>
-                <p>Let's Get you out of here, before it starts biting. Click to go <a>Home</a></p>
+                <p>Let's Get you out of here, before it starts biting. Click to go <a href="src\components\TextForm.js">Home</a></p>
             </div>
         )
     }

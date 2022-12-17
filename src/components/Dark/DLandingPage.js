@@ -6,7 +6,7 @@ export default function DLandingPage() {
   
 
     return (
-        <motion.div initial={{scale: 0}} animate={{scale: 1}}>
+        <motion.div initial={{opacity: 0, x:-200}} animate={{opacity: 1, x:0}} transition={{duration: 0.5}}>
           <div className="container my-3">
            <DTextForm/>
           </div>

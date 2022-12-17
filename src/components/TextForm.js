@@ -41,7 +41,7 @@ export default function TextForm(props) {
     <div className="container text-xl">
         <h1><strong>Enter the text to analyze.</strong></h1>
         <div className="mb-3">
-        <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='black'?'black':'light'}} id="textBox" rows="8"></textarea>
+        <textarea className="form-control caret-yellow-500 focus:border-yellow-500 focus:outline-0 focus:ring focus:ring-yellow-500" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='black'?'black':'light'}} id="textBox" rows="8"></textarea>
         </div>
         <motion.button className="btn mx-2" onClick={UpperCase} whileHover={{ scale: 1.2 }}
         style={{border: '2px solid white', backgroundColor: '#F3CCFF'}}>Upper Case</motion.button>

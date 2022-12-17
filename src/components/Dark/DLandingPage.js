@@ -2,7 +2,7 @@ import TextForm from './TextForm';
 import React from 'react';
 import {motion} from 'framer-motion';
 
-export default function LandingPage() {
+export default function DLandingPage() {
   
 
     return (
@@ -13,5 +13,3 @@ export default function LandingPage() {
         </motion.div>
     );
 }
-
-  

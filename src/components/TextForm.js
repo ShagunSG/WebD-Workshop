@@ -41,18 +41,18 @@ export default function TextForm(props) {
     <div className="container text-xl">
         <h1><strong>Enter the text to analyze.</strong></h1>
         <div className="mb-3">
-        <textarea className="form-control caret-yellow-500 focus:border-yellow-500 focus:outline-0 focus:ring focus:ring-yellow-500" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='black'?'black':'light'}} id="textBox" rows="8"></textarea>
+        <textarea className="form-control caret-pink-500 focus:border-pink-500 focus:outline-0 focus:ring focus:ring-pink-500" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='black'?'black':'light'}} id="textBox" rows="8"></textarea>
         </div>
         <motion.button className="btn mx-2" onClick={UpperCase} whileHover={{ scale: 1.2 }}
-        style={{border: '2px solid white', backgroundColor: '#F3CCFF'}}>Upper Case</motion.button>
+        style={{backgroundColor: '#F3CCFF'}}>Upper Case</motion.button>
         <motion.button className="btn mx-2" onClick={LowerCase} whileHover={{ scale: 1.2 }}
-        style={{border: '2px solid white', backgroundColor: '#F3CCFF'}}>Lower Case</motion.button>
+        style={{backgroundColor: '#F3CCFF'}}>Lower Case</motion.button>
         <motion.button className="btn mx-2" onClick={clearText} whileHover={{ scale: 1.2 }}
-        style={{border: '2px solid white', backgroundColor: '#F3CCFF'}}>Clear Text</motion.button>
+        style={{backgroundColor: '#F3CCFF'}}>Clear Text</motion.button>
         <motion.button className="btn mx-2" onClick={copyText} whileHover={{ scale: 1.2 }}
-        style={{border: '2px solid white', backgroundColor: '#F3CCFF'}}>Copy Text</motion.button>
+        style={{backgroundColor: '#F3CCFF'}}>Copy Text</motion.button>
         <motion.button className="btn mx-2" onClick={handleExtraSpace} whileHover={{ scale: 1.15 }}
-        style={{border: '2px solid white', backgroundColor: '#F3CCFF'}}>Remove Extra Space</motion.button>
+        style={{backgroundColor: '#F3CCFF'}}>Remove Extra Space</motion.button>
     </div>
     <div className="container my-2">
       <h1>Your text summary.</h1>

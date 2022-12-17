@@ -2,14 +2,19 @@ import './App.css';
 import Navbar from './components/Navbar'
 import DNavbar from './components/Dark/DNavbar'
 import LandingPage from './components/LandingPage'
+import DLandingPage from './components/Dark/DLandingPage'
+import DDoggy from './components/Dark/DDoggy'
 import About from './components/About'
+import Doggy from './components/Doggy'
+import light from './images/moon.png'
+import dark from './images/sun.png'
 
 // import useLocalStorage from 'use-local-storage';
 import React, { Component, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(light);
   const [hola, setHola] = useState(
 
     <Router>
@@ -22,7 +27,7 @@ export default function App() {
             path="/WebD-Workshop"
             element={
               <>
-                <DNavbar />
+                <Navbar />
                 <LandingPage />
               </>
             }
@@ -31,8 +36,17 @@ export default function App() {
             path="/about"
             element={
               <>
-                <DNavbar />
+                <Navbar />
                 <About />
+              </>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <>
+                <Navbar />
+                <Doggy />
               </>
             }
           />
@@ -41,39 +55,48 @@ export default function App() {
     </Router>
   );
   const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
+    if (theme === light) {
+      setTheme(dark);
       setHola(
-      <Router>
-        <div
-          className="app bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r"
-          style={{ height: "100vh" }}
-        >
-          <Routes>
-            <Route
-              path="/WebD-Workshop"
-              element={
-                <>
-                  <DNavbar />
-                  <LandingPage />
-                </>
-              }
-            />
-            <Route
-              path="/about"
-              element={
-                <>
-                  <DNavbar />
-                  <About />
-                </>
-              }
-            />
-          </Routes>
-        </div>
-      </Router>
+        <Router>
+          <div
+            className="app bg-gradient-to-r from-gray-900 to-gray-600 bg-gradient-to-r overflow-x-hidden"
+            style={{ height: "100vh" }}
+          >
+            <Routes>
+              <Route
+                path="/WebD-Workshop"
+                element={
+                  <div className='overflow-x-hidden'>
+                    <DNavbar />
+                    <DLandingPage />
+                  </div>
+                }
+              />
+              <Route
+                path="/about"
+                element={
+                  <>
+                    <DNavbar />
+                    <About />
+                  </>
+                }
+              />
+              <Route
+                path="*"
+                element={
+                  <>
+                    <DNavbar />
+                    <DDoggy />
+                  </>
+                }
+              />
+            </Routes>
+          </div>
+        </Router>
       );
     } else {
-      setTheme('light');
+      setTheme(light);
       setHola(
         <Router>
           <div
@@ -99,6 +122,15 @@ export default function App() {
                   </>
                 }
               />
+              <Route
+                path="*"
+                element={
+                  <>
+                    <Navbar />
+                    <Doggy />
+                  </>
+                }
+              />
             </Routes>
           </div>
         </Router>
@@ -108,8 +140,10 @@ export default function App() {
   return (
     <>
       {hola}
-      <div className='absolute bottom-0 right-0'>
-        <button onClick={toggleTheme}>Toggle Theme</button>
+      <div className='fixed top-8 right-8'>
+        <button onClick={toggleTheme} className='rounded-full'>
+          <img src={theme} className='w-8 h-8'></img>
+        </button>
       </div>
     </>
   );

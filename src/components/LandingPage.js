@@ -1,3 +1,4 @@
+import Navbar from './Navbar'
 import TextForm from './TextForm';
 import React from 'react';
 import {motion} from 'framer-motion';

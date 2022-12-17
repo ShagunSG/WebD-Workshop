@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './components/Navbar'
 import LandingPage from './components/LandingPage'
 import About from './components/About'
-import Test from './components/Test'
 
 // import useLocalStorage from 'use-local-storage';
 import React, { Component } from 'react';
@@ -48,7 +47,6 @@ class App extends Component {
             <Route path="/WebD-Workshop" element={<><Navbar /><LandingPage /></>} />
             <Route path="/about" element={<><Navbar /><About /></>} />
           </Routes>
-          <Test/>
         </div>
 
       </Router>

@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import {motion} from 'framer-motion';
 
 export default function DAbout() {
     return (
-        <div className="mx-2 my-2 h-[calc(100vh-112px)] w-screen text-xl overflow-y-hidden">
+        <motion.div className="mx-2 my-2 h-[calc(100vh-112px)] w-screen text-xl overflow-y-hidden" initial={{x: -200, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 0.5}}>
             <h1>About us</h1>
             <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
@@ -42,6 +43,6 @@ export default function DAbout() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

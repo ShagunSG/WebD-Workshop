@@ -37,7 +37,7 @@
   }
 }
 
-a {
+.under-line {
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   text-decoration: none;
@@ -46,11 +46,26 @@ a {
   padding: 15px 20px;
   position: relative;
 }
-a:hover{
+#brand{
+  background: linear-gradient(to right, rgb(153, 27, 27), rgb(202, 138, 4), rgb(234, 179, 8));
+  animation: rainbow 2s ease-in-out infinite;
+  transition: color .2s ease-in-out;
+  background-clip: text;
+  -webkit-background-clip:text;
+}
+#brand:hover{
+  color:rgba(0,0,0,0);
+}
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+.under-line:hover{
   color: #aa8ecd;
 }
 
-a:after {    
+.under-line:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -62,7 +77,7 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
+.under-line:hover:after { 
   width: 100%; 
   left: 0; 
 }

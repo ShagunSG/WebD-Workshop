@@ -5,7 +5,6 @@ import {motion} from 'framer-motion';
 
 export default function Navbar(props) {
 
-  const [ move1, setMove1 ] = useState(false);
   const [ move2, setMove2 ] = useState(false);
   const [ move3, setMove3 ] = useState(false);
 
@@ -14,9 +13,9 @@ export default function Navbar(props) {
     <>
 
       <div className='w-full h-24 flex flex-row shadow-lg border-b-1 border-black justify-left items-center bg-gradient-to-r from-rose-100 to-teal-100'> 
-        <motion.div className='mx-8' animate={{y: move1? -3: 0}} onHoverStart={()=> {setMove1(!move1)}} onHoverEnd={()=> {setMove1(!move1)}}><h1 className='uppercase text-xl font-bold'><a href="/WebD-Workshop">techfest-workshop</a></h1></motion.div>
-        <motion.div className='mx-8' animate={{y: move2? -3: 0}} onHoverStart={()=> {setMove2(!move2)}} onHoverEnd={()=> {setMove2(!move2)}}><h1 className='uppercase text-lg'>home </h1></motion.div>
-        <motion.div className='mx-8' animate={{y: move3? -3: 0}} onHoverStart={()=> {setMove3(!move3)}} onHoverEnd={()=> {setMove3(!move3)}}><h1 className='uppercase text-lg '><a href="/about">about</a></h1></motion.div>
+        <div className='mx-8'><h1 className='uppercase text-xl font-bold'><a href="/WebD-Workshop" id='brand'>techfest-workshop</a></h1></div>
+        <motion.div className='mx-8' animate={{y: move2? -3: 0}} onHoverStart={()=> {setMove2(!move2)}} onHoverEnd={()=> {setMove2(!move2)}}><h1 className='uppercase text-lg'><a href="/" className='under-line'>home</a></h1></motion.div>
+        <motion.div className='mx-8' animate={{y: move3? -3: 0}} onHoverStart={()=> {setMove3(!move3)}} onHoverEnd={()=> {setMove3(!move3)}}><h1 className='uppercase text-lg '><a href="/about" className='under-line'>about</a></h1></motion.div>
         <div className=''></div>
       </div>
     </>

@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage'
 import DLandingPage from './components/Dark/DLandingPage'
 import DDoggy from './components/Dark/DDoggy'
 import About from './components/About'
+import DAbout from './components/Dark/DAbout'
 import Doggy from './components/Doggy'
 import light from './images/moon.png'
 import dark from './images/sun.png'
@@ -79,7 +80,7 @@ export default function App() {
                 element={
                   <>
                     <DNavbar />
-                    <About />
+                    <DAbout />
                   </>
                 }
               />

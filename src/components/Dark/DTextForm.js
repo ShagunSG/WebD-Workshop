@@ -38,7 +38,7 @@ export default function DTextForm(props) {
             <div className="container text-xl">
                 <h1 className='text-white'><strong>Enter the text to analyze.</strong></h1>
                 <div className="mb-3">
-                    <textarea className="form-control caret-pink-500 focus:border-pink-500 focus:outline-0 focus:ring focus:ring-pink-500 bg-gray-700 focus:bg-gray-700 text-white" value={text} onChange={handleOnChange} style={{ backgroundColor: props.mode === 'black' ? 'black' : 'light' }} id="textBox" rows="8"></textarea>
+                    <textarea className="form-control caret-[#fb9DE2] focus:border-[#fb9DE2] focus:outline-0 focus:ring focus:ring-[#fb9DE2] bg-gray-700 focus:bg-gray-700 text-white" value={text} onChange={handleOnChange} style={{ backgroundColor: props.mode === 'black' ? 'black' : 'light' }} id="textBox" rows="8"></textarea>
                 </div>
                 <motion.button className="btn mx-2" onClick={UpperCase} whileHover={{ scale: 1.2 }}
                     style={{ backgroundColor: '#F3CCFF' }}>Upper Case</motion.button>

@@ -47,7 +47,7 @@
   position: relative;
 }
 #brand{
-  background: linear-gradient(to right, rgb(153, 27, 27), rgb(202, 138, 4), rgb(234, 179, 8));
+  background: linear-gradient(to left, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
   animation: rainbow 2s ease-in-out infinite;
   transition: color .2s ease-in-out;
   background-clip: text;
@@ -62,7 +62,7 @@
   100%{background-position:left}
 }
 .under-line:hover{
-  color: #aa8ecd;
+  color: #7C8EDF;
 }
 
 .under-line:after {    
@@ -73,7 +73,7 @@
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #fb9de2;
+  background: #3A55CF;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }

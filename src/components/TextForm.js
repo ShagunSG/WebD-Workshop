@@ -44,15 +44,15 @@ export default function TextForm(props) {
         <textarea className="form-control caret-pink-500 focus:border-pink-500 focus:outline-0 focus:ring focus:ring-pink-500" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='black'?'black':'light'}} id="textBox" rows="8"></textarea>
         </div>
         <motion.button className="btn mx-2" onClick={UpperCase} whileHover={{ scale: 1.2 }}
-        style={{backgroundColor: '#F3CCFF'}}>Upper Case</motion.button>
+        style={{backgroundColor: '#7C8EDF'}}>Upper Case</motion.button>
         <motion.button className="btn mx-2" onClick={LowerCase} whileHover={{ scale: 1.2 }}
-        style={{backgroundColor: '#F3CCFF'}}>Lower Case</motion.button>
+        style={{backgroundColor: '#7C8EDF'}}>Lower Case</motion.button>
         <motion.button className="btn mx-2" onClick={clearText} whileHover={{ scale: 1.2 }}
-        style={{backgroundColor: '#F3CCFF'}}>Clear Text</motion.button>
+        style={{backgroundColor: '#7C8EDF'}}>Clear Text</motion.button>
         <motion.button className="btn mx-2" onClick={copyText} whileHover={{ scale: 1.2 }}
-        style={{backgroundColor: '#F3CCFF'}}>Copy Text</motion.button>
+        style={{backgroundColor: '#7C8EDF'}}>Copy Text</motion.button>
         <motion.button className="btn mx-2" onClick={handleExtraSpace} whileHover={{ scale: 1.15 }}
-        style={{backgroundColor: '#F3CCFF'}}>Remove Extra Space</motion.button>
+        style={{backgroundColor: '#7C8EDF'}}>Remove Extra Space</motion.button>
     </div>
     <div className="container my-2">
       <h1>Your text summary.</h1>

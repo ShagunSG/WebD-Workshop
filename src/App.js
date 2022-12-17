@@ -1,4 +1,5 @@
 import './App.css';
+import './DApp.css';
 import Navbar from './components/Navbar'
 import DNavbar from './components/Dark/DNavbar'
 import LandingPage from './components/LandingPage'
